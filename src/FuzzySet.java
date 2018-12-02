@@ -4,7 +4,6 @@
  * Created by
  */
 abstract public class FuzzySet {
-//    protected String term;
     protected String label;
     protected int id;
 
@@ -22,10 +21,6 @@ abstract public class FuzzySet {
         return this.label;
     }
 
-  /*  public String getTerm(){
-        return this.term;
-    }
-*/
 
     public int getId() {
         return this.id;

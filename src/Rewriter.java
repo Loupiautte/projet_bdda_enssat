@@ -126,15 +126,11 @@ public class Rewriter {
             if (v != null) {
                 for (FuzzySet fs : this.voc.getAttributesList().get(a).getPartition().getModalities()){  //For each FS of the partition associated to the attribute concerned
                     m = fs.getMu(v);
-                  //  System.out.println("Attribute "+this.voc.getAttributesList().get(a).getNameOfAttribute() +" = "+ v + " MODALITY "+fs.getLabel()+" mu="+m);
                     trw.setRW(fs.getId(), m);
                 }
             }
         }
         return trw;
     }
-
-
-    //Return the normalized datasetRewriting vector
 
 }

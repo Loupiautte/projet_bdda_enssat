@@ -33,4 +33,19 @@ public class Selection {
         return operators.get(id);
     }
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        Selection selec = new Selection();
+        selec.values = (Hashtable<Integer, Double>)values.clone();
+        selec.operators = (Hashtable<Integer, Operator>)operators.clone();
+        return selec;
+    }
+
+    @Override
+    public String toString() {
+        return "Selection{" +
+                "values=" + values +
+                ", operators=" + operators +
+                '}';
+    }
 }
