@@ -25,7 +25,7 @@ public class Selection {
         operators.clear();
     }
 
-    public double getValue(Integer id) {
+    public Double getValue(Integer id) {
         return values.get(id);
     }
 

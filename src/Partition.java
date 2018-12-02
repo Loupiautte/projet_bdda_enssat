@@ -57,4 +57,15 @@ public class Partition {
         this.modalities.add(mod);
         this.numberOfFuzzySet++;
     }
+
+    public FuzzySet getFuzzySet(String label) {
+        for (FuzzySet fs:this.modalities) {
+            if(fs.getLabel().equals(label)) {
+                return fs;
+            }
+        }
+        return null;
+    }
+
+
 }
